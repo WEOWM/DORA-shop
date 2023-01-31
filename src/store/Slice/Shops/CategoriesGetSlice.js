@@ -4,6 +4,7 @@ import Api from "../../Api";
 export const FeatchCategoiesGet = createAsyncThunk(
     "categoies-Get",
     async ({payload, CategoriesGETID},{rejectWithValue})=>{
+        console.log("textt:" ,CategoriesGETID);
         try {
             const response = await Api.ActionHandle({
                 url:Api.categoriesGET.replace("{id}",CategoriesGETID),
@@ -32,9 +33,9 @@ const categoiesGETSlice = createSlice({
     },
     reducers:{},
     extraReducers:(bulider) =>{
-        bulider.addCase(FeatchCategoiesGet.fulfilled, (state,payload)=>{
-            state.categoiesGet ={}
-            payload.forEach(iteam =>{state.categoiesGet.push(iteam)})
+        bulider.addCase(FeatchCategoiesGet.fulfilled, (state,{payload})=>{
+            state.categoiesGet = payload
+            
         })
     }
 })

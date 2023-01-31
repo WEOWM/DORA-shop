@@ -12,10 +12,10 @@ const Head = () => {
                 </div>
                 <div className="nav-bar ">
                     <li>
-                        <NavLink>Home</NavLink>
+                        <NavLink to={"/ "}>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink>Home</NavLink>
+                        <NavLink to={"/cart"}>cart</NavLink>
                     </li>
                     <li>
                         <NavLink>Home</NavLink>

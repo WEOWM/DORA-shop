@@ -1,21 +1,27 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector, } from 'react-redux'
 import { FeatchCategories } from '../../../store/Slice/Shops/CategoriesSlice'
+import { FeatchCategoiesGet } from '../../../store/Slice/Shops/CategoriesGetSlice'
 
 
 
 const CategoriesCard = () => {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
 
   useEffect(() => {
     dispatch(FeatchCategories())
+    
 
   }, [])
 
 
   const CategoriesGet = (e,id) =>{
-    // dispatch(FeatchCategoiesGet({CategoriesGETID : id}))
+    dispatch(FeatchCategoiesGet({CategoriesGETID : id}))
+    navigate(`singlecart/${id}`)
+
     console.log("CategoriesGet:",id);
     
 

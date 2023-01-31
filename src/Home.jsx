@@ -7,7 +7,7 @@ import Head from './components/Header/Head'
 const Home = () => {
   return (
     <div>
-        <Head/>
+        
         <Banner/>
         <CategoriesCard/>
         

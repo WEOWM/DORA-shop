@@ -1,0 +1,16 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #565264;
+    padding: 5rem;
+    list-style: none;
+    padding-left: 8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.fd li {
+    letter-spacing: .1rem;
+    initial-letter-align: auto;
+}
