@@ -34,11 +34,11 @@ const Footer = () => {
             <li>Privacy Policy</li>
             <li>Payments And Secturity</li>
             <li>Terms And Conditions</li>
-            
+
           </div>
 
-         
-          
+
+
         </div>
       </div>
 

@@ -30,6 +30,7 @@ const Singlepage = () => {
                         <h4>{categoiesGet.price}</h4>
                         <p>{categoiesGet.description}</p>
                         <a href='/cart' class="btn btn-outline-dark " >Go to Cart</a>
+                        <a href='/' class="btn btn-outline-danger ms-1" >Cancle to cart</a>
 
                     </div>
                 </div>

@@ -13,17 +13,17 @@ const CategoriesCard = () => {
 
   useEffect(() => {
     dispatch(FeatchCategories())
-    
+
 
   }, [])
 
 
-  const CategoriesGet = (e,id) =>{
-    dispatch(FeatchCategoiesGet({CategoriesGETID : id}))
+  const CategoriesGet = (e, id) => {
+    dispatch(FeatchCategoiesGet({ CategoriesGETID: id }))
     navigate(`singlecart/${id}`)
 
-    console.log("CategoriesGet:",id);
-    
+    console.log("CategoriesGet:", id);
+
 
   }
 
@@ -33,8 +33,8 @@ const CategoriesCard = () => {
   return (
 
     <>
-    <h3 className='text-center mt-5 p-4' >Produts</h3>
-    <hr />
+      <h3 className='text-center mt-5 p-4' >Produts</h3>
+      <hr />
       <div className="container-fulid ">
         <div className="row p-0 m-0">
           {
@@ -46,7 +46,7 @@ const CategoriesCard = () => {
                     <div className="card-body ">
                       <h5 className="card-title ">{data.description.substring(0, 12)}..</h5>
                       <p className="card-text lead fw-bold"> ₹ {data.price}</p>
-                      <a  className="btn btn-outline-dark" onClick={(e)=>CategoriesGet(e, data.id)}>Buy Now</a>
+                      <a className="btn btn-outline-dark" onClick={(e) => CategoriesGet(e, data.id)}>Buy Now</a>
                     </div>
                   </div>
                 </div>

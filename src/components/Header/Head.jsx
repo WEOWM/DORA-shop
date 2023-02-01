@@ -15,13 +15,13 @@ const Head = () => {
                         <NavLink to={"/ "}>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/cart"}>cart</NavLink>
+                        <NavLink >Produts</NavLink>
                     </li>
                     <li>
-                        <NavLink>Home</NavLink>
+                        <NavLink>Abouts</NavLink>
                     </li>
                     <li>
-                        <NavLink>Home</NavLink>
+                        <NavLink to={"/cart"}>Cart</NavLink>
                     </li>
 
                 </div>
@@ -32,16 +32,16 @@ const Head = () => {
                 </div>
                 <div className="mob-nav">
                     <li>
-                        
+                        <NavLink to={"/ "}><i class="fa-solid fa-house"></i></NavLink>
                     </li>
                     <li>
-                        <NavLink>Home</NavLink>
+                        <NavLink ><i class="fa-solid fa-shirt"></i></NavLink>
                     </li>
                     <li>
-                        <NavLink>Home</NavLink>
+                        <NavLink><i class="fa-solid fa-handshake-angle"></i></NavLink>
                     </li>
                     <li>
-                        <NavLink>Home</NavLink>
+                        <NavLink><i class="fa-solid fa-cart-plus"></i></NavLink>
                     </li>
                 </div>
             </div>
