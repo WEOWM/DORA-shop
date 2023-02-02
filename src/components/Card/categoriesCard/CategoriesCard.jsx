@@ -19,6 +19,7 @@ const CategoriesCard = () => {
 
 
   const CategoriesGet = (e, id) => {
+    e.preventDefault();
     dispatch(FeatchCategoiesGet({ CategoriesGETID: id }))
     navigate(`singlecart/${id}`)
 
